@@ -1,0 +1,54 @@
+ body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #e473c6, #d7e182);  
+}
+  .card {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    width: 300px;
+    margin: 100px auto;
+    padding: 50px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    text-align: center;
+ }
+ .card:hover {
+    background: rgba(255, 255, 255, 0.1); 
+    transform: scale(1.05);
+  }
+.button:hover{
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
+}
+  .button {
+    background: rgba(242, 238, 238, 0.3); 
+    backdrop-filter: blur(10px); 
+    border: 1px solid white; 
+    border-radius: 10px;
+    color: white; 
+    padding: 15px;
+    font-size: 15px;
+  }
+  #add-button + #changeBgButton {
+    margin-left: 22px; 
+}
+#countDisplay {
+    font-size: 50px; /* 增大数字字体大小 */
+    font-weight: bold; /* 使数字变粗 */
+    color: white; /* 设置数字颜色为白色 */
+  }
+  
+  @media (max-width: 400px) {
+    .card {
+      width: 90%;
+      margin: 50px auto;
+    }
+  }
+  .count {
+        color: white;}
+  
+
